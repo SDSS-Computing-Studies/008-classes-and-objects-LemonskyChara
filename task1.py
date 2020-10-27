@@ -26,14 +26,66 @@ class student:
 
     # properties should be listed first
 
-    def __init__(): # You will need to create your own input parameters for all methods
-        pass
+    def __init__(self, name, studentNumber, grade): # You will need to create your own input parameters for all methods
+        self.name = name
+        self.studentNumber = studentNumber
+        self.grade = grade
 
-    def __del__():
+    def getCourses(self, lista):
+        Courses = []
+        Courses = lista
+
+    def getGrades(self, listb):
+        Grades = []
+        Grades = listb
+
+    def getHonorRoll(self):
+        for e in range(0, len(Grades)):
+            total2 = total2 + Grades[e]
+        if total2 >= 86:
+            return True
+        else:
+            return False
+        
+
+    def showCourses(self):
+        print("---------------------")
+        print("Choose one course you want to know: ")
+        print("1." + Courses[0])
+        print("2." + Courses[1])
+        print("3." + Courses[2])
+        print("4." + Courses[3])
+        print("5." + Courses[4])
+        print("6." + Courses[5])
+        print("7." + Courses[6])
+        coursebool = input("Choose a number[1-7]: ")
+        print("")
+        return int(coursebool)
+
+    def showGrade(coursebool):
+        if coursebool == 1:
+            print(Grades[0])
+        elif coursebool == 2:
+            print(Grades[1])
+        elif coursebool == 3:
+            print(Grades[2])
+        elif coursebool == 4:
+            print(Grades[3])
+        elif coursebool == 5:
+            print(Grades[4])
+        elif cousebool == 6:
+            print(Grades[5])
+        elif cousebool == 7:
+            print(Grades[6])
+
+    def __del__(self):
         pass
 
     def average(self):
-        pass
+        for i in range(0, len(Grades)):
+            total = total + Grades[i]
+        ave = total / len(Grades)
+        print("Your average is "+ave)
 
 def main():
     # This contains test data that will be used by the autograder.
