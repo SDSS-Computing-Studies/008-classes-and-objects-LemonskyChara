@@ -44,6 +44,7 @@ class student:
         return Grades
 
     def getHonorRoll(self):
+        global e
         for e in range(0, len(Grades)):
             b = b + Grades[e]
         if b >= 86:
@@ -86,6 +87,7 @@ class student:
         pass
 
     def average(self):
+        global a
         for i in range(0, len(Grades)):
             a = a + Grades[i]
         ave = a / len(Grades)
