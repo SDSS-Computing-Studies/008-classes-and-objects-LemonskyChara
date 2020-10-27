@@ -67,24 +67,24 @@ class student:
         print("")
         return int(coursebool)
 
-    def showGrade(coursebool):
+    def showGrade(self, coursebool):
         if coursebool == 1:
-            print(Grades[0])
+            print("Your mark is " + str(Grades[0]))
         elif coursebool == 2:
-            print(Grades[1])
+            print("Your mark is " + str(Grades[1]))
         elif coursebool == 3:
-            print(Grades[2])
+            print("Your mark is " + str(Grades[2]))
         elif coursebool == 4:
-            print(Grades[3])
+            print("Your mark is " + str(Grades[3]))
         elif coursebool == 5:
-            print(Grades[4])
-        elif cousebool == 6:
-            print(Grades[5])
-        elif cousebool == 7:
-            print(Grades[6])
+            print("Your mark is " + str(Grades[4]))
+        elif coursebool == 6:
+            print("Your mark is " + str(Grades[5]))
+        elif coursebool == 7:
+            print("Your mark is " + str(Grades[6]))
 
     def __del__(self):
-        pass
+        print(self.name + " Goodbye.")
 
     def average(self):
         a = 0
@@ -105,5 +105,19 @@ def main():
     st2 = student("Joe Lunchbox","12346", 11)
     st1.getCourses( ["English","Math","Physics","Computers","Geography","Chemistry","French"] )
     st1.getGrades( [71, 98, 93, 95, 68, 81, 71])
-    
+
+    while True:
+        coursebool = st1.showCourses()
+        st1.showGrade(coursebool)
+        continuebool = int(input("\nEnter 1 if you want to continue otherwise enter 0: \n"))
+        if continuebool == 0:
+            del st1
+            break
+        print("\n")
+
+
+
+
+
 main()
+
