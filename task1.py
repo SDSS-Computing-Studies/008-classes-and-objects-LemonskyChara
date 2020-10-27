@@ -34,10 +34,12 @@ class student:
     def getCourses(self, lista):
         Courses = []
         Courses = lista
+        return Courses
 
     def getGrades(self, listb):
         Grades = []
         Grades = listb
+        return Grades
 
     def getHonorRoll(self):
         for e in range(0, len(Grades)):
