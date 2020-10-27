@@ -106,18 +106,6 @@ def main():
     st1.getCourses( ["English","Math","Physics","Computers","Geography","Chemistry","French"] )
     st1.getGrades( [71, 98, 93, 95, 68, 81, 71])
 
-    while True:
-        coursebool = st1.showCourses()
-        st1.showGrade(coursebool)
-        continuebool = int(input("\nEnter 1 if you want to continue otherwise enter 0: \n"))
-        if continuebool == 0:
-            del st1
-            break
-        print("\n")
-
-
-
-
 
 main()
 
