@@ -32,11 +32,13 @@ class student:
         self.grade = grade
 
     def getCourses(self, lista):
+        global Courses
         Courses = []
         Courses = lista
         return Courses
 
     def getGrades(self, listb):
+        global Grades
         Grades = []
         Grades = listb
         return Grades
@@ -103,5 +105,3 @@ def main():
 
 
 
-
-main()
