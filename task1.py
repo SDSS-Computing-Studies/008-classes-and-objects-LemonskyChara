@@ -92,7 +92,7 @@ class student:
             a = a + Grades[i]
         ave = float(a / len(Grades))
         ave = round(ave, 1)
-        
+        return float(ave)
 
 def main():
     # This contains test data that will be used by the autograder.
