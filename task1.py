@@ -91,6 +91,7 @@ class student:
         for i in range(0, len(Grades)):
             a = a + Grades[i]
         ave = a / len(Grades)
+        ave = round(ave, 1)
         print("Your average is "+str(ave))
 
 def main():
@@ -104,7 +105,5 @@ def main():
     st2 = student("Joe Lunchbox","12346", 11)
     st1.getCourses( ["English","Math","Physics","Computers","Geography","Chemistry","French"] )
     st1.getGrades( [71, 98, 93, 95, 68, 81, 71])
-
-
-
+    
 main()
