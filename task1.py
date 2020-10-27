@@ -90,9 +90,9 @@ class student:
         a = 0
         for i in range(0, len(Grades)):
             a = a + Grades[i]
-        ave = a / len(Grades)
+        ave = float(a / len(Grades))
         ave = round(ave, 1)
-        print("Your average is "+str(ave))
+        
 
 def main():
     # This contains test data that will be used by the autograder.
