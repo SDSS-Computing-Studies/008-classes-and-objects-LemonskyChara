@@ -45,8 +45,8 @@ class student:
 
     def getHonorRoll(self):
         for e in range(0, len(Grades)):
-            total2 = total2 + Grades[e]
-        if total2 >= 86:
+            b = b + Grades[e]
+        if b >= 86:
             return True
         else:
             return False
@@ -87,8 +87,8 @@ class student:
 
     def average(self):
         for i in range(0, len(Grades)):
-            total = total + Grades[i]
-        ave = total / len(Grades)
+            a = a + Grades[i]
+        ave = a / len(Grades)
         print("Your average is "+ave)
 
 def main():
